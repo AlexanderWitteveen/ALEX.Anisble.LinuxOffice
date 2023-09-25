@@ -1,0 +1,11 @@
+---
+
+- ansible.builtin.include_role:
+    name: alex.linuxoffice.installoffice
+
+- ansible.builtin.include_role:
+    name: alex.linuxoffice.installdraw
+
+- ansible.builtin.include_role:
+    name: alex.linuxoffice.installpaint
+

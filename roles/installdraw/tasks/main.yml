@@ -1,13 +1,12 @@
 ---
 
-- name: Install xrdp
+- name: Install krita
   apt:
-    name: "{{ packages }}"
+    name:
+      - krita 
     state: present
     update_cache: yes
   vars:
-    packages:
-    - xrdp 
     ansible_connection: ssh
     ansible_host: "{{ prop_ipaddress }}"
   become: true
